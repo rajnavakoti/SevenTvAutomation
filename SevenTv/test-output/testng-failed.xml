@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [SampleProject Suite]" parallel="methods" data-provider-thread-count="1">
+  <test thread-count="2" name="P1(failed)" parallel="methods">
+    <classes>
+      <class name="com.test.ta.TATestCases">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.test.ta.TATestCases -->
+    </classes>
+  </test> <!-- P1(failed) -->
+</suite> <!-- Failed suite [SampleProject Suite] -->

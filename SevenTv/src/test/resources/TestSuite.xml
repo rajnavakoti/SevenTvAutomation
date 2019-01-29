@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="1" name="SampleProject Suite" skipfailedinvocationcounts="false" junit="false"
+    parallel="tests" data-provider-thread-count="1" annotations="JDK">
+
+    	
+	
+    <test name="testchrome">
+    <parameter name="browser" value="chrome"/>
+      <classes>     		
+     		
+    		<class name="com.test.ta.TATestCases"/> 
+     		
+        </classes>
+    </test>
+    
+    <test name="testfirefox">
+    <parameter name="browser" value="firefox"/>
+      <classes>     		
+     		
+    		<class name="com.test.ta.TATestCases"/> 
+     		
+        </classes>
+    </test>
+</suite>
